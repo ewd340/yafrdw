@@ -39,5 +39,3 @@ df = (
     .select(['idx', 'ortho'])
     .collect()
 ).write_csv('./words.txt', False, separator='\t')
-
-
