@@ -1,10 +1,12 @@
-# Yet Another French Word List
+# Yet Another French Diceware Word List
 
 ## What
 
 This is yet another French wordlist generated from the
 [lexique.org](https://www.lexique.org) dataset, using
-[polars](https://www.polar.rs).
+[polars](https://www.polar.rs). This list may eventually be used with the
+[Diceware](https://theworld.com/~reinhold/diceware.html) method for random
+passphrase generation.
 
 ## How
 
@@ -14,7 +16,7 @@ this repository. The script `collect.py`looks for names and adjectives that are:
 - Between 4 and 9 letters long.
 - Do no contain any accent (only ASCII characters).
 - Are not bad words (not included in the badwords.txt file)
-- Are signular.
+- Are signular (not pluarl words)
 - Among the most `LIST_SIZE` (7776) most frequent words
 
 
